@@ -13,4 +13,4 @@ ExampleNetworkModule uses Jackson library to parse results in a List of NewsUnit
 
 Most of the code can be found in the directory
 https://github.com/lpaajarvi/spaceFlightApp/tree/main/app/src/main/java/fi/jobapplication/lauripaajarvi/spaceflightapp
-"# spaceFlightApp" 
+
