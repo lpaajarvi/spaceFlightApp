@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How many news entries would you like to get?" />
+    <EditText
+
+        android:id="@+id/EditNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/FetchAndParseButton"
+        android:onClick="clickedFetchAndParseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Get News" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/FetchAndParseButton">
+
+        <TextView
+            android:id="@+id/DataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="- No news fetched -"
+            android:padding="5dp"
+            />
+
+    </ScrollView>
+
+</LinearLayout>
